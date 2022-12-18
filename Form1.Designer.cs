@@ -30,9 +30,7 @@ namespace Projeto_Finch
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.panLogo = new System.Windows.Forms.Panel();
-            this.lbSubtitulo = new System.Windows.Forms.Label();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.panPrincipal = new System.Windows.Forms.Panel();
             this.panLogin = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.Button();
             this.txtUsu = new System.Windows.Forms.TextBox();
@@ -40,45 +38,33 @@ namespace Projeto_Finch
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.panLogo = new System.Windows.Forms.Panel();
+            this.lbSubtitulo = new System.Windows.Forms.Label();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panPrincipal.SuspendLayout();
+            this.panLogin.SuspendLayout();
             this.panLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panLogo
+            // panPrincipal
             // 
-            this.panLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.panLogo.Controls.Add(this.lbSubtitulo);
-            this.panLogo.Controls.Add(this.pbLogo);
-            this.panLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panLogo.Location = new System.Drawing.Point(0, 0);
-            this.panLogo.Name = "panLogo";
-            this.panLogo.Size = new System.Drawing.Size(315, 312);
-            this.panLogo.TabIndex = 0;
-            // 
-            // lbSubtitulo
-            // 
-            this.lbSubtitulo.AutoSize = true;
-            this.lbSubtitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSubtitulo.ForeColor = System.Drawing.Color.White;
-            this.lbSubtitulo.Location = new System.Drawing.Point(11, 219);
-            this.lbSubtitulo.Name = "lbSubtitulo";
-            this.lbSubtitulo.Size = new System.Drawing.Size(297, 22);
-            this.lbSubtitulo.TabIndex = 1;
-            this.lbSubtitulo.Text = "_simplificando o mundo jurídico";
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
-            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbLogo.Location = new System.Drawing.Point(73, 83);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(166, 123);
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
+            this.panPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panPrincipal.Controls.Add(this.panLogin);
+            this.panPrincipal.Controls.Add(this.panLogo);
+            this.panPrincipal.Location = new System.Drawing.Point(3, 3);
+            this.panPrincipal.Name = "panPrincipal";
+            this.panPrincipal.Size = new System.Drawing.Size(564, 353);
+            this.panPrincipal.TabIndex = 0;
             // 
             // panLogin
             // 
+            this.panLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panLogin.BackColor = System.Drawing.Color.White;
             this.panLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panLogin.Controls.Add(this.btnFechar);
@@ -87,11 +73,10 @@ namespace Projeto_Finch
             this.panLogin.Controls.Add(this.txtSenha);
             this.panLogin.Controls.Add(this.btnLogar);
             this.panLogin.Controls.Add(this.label2);
-            this.panLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panLogin.Location = new System.Drawing.Point(315, 0);
+            this.panLogin.Location = new System.Drawing.Point(312, 0);
             this.panLogin.Name = "panLogin";
-            this.panLogin.Size = new System.Drawing.Size(314, 312);
-            this.panLogin.TabIndex = 1;
+            this.panLogin.Size = new System.Drawing.Size(252, 353);
+            this.panLogin.TabIndex = 3;
             // 
             // btnFechar
             // 
@@ -100,7 +85,7 @@ namespace Projeto_Finch
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
-            this.btnFechar.Location = new System.Drawing.Point(265, 12);
+            this.btnFechar.Location = new System.Drawing.Point(217, 9);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(26, 26);
             this.btnFechar.TabIndex = 6;
@@ -112,16 +97,16 @@ namespace Projeto_Finch
             // txtUsu
             // 
             this.txtUsu.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F);
-            this.txtUsu.Location = new System.Drawing.Point(29, 118);
+            this.txtUsu.Location = new System.Drawing.Point(8, 130);
             this.txtUsu.Name = "txtUsu";
-            this.txtUsu.Size = new System.Drawing.Size(262, 25);
+            this.txtUsu.Size = new System.Drawing.Size(235, 25);
             this.txtUsu.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 99);
+            this.label3.Location = new System.Drawing.Point(5, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 4;
@@ -130,10 +115,10 @@ namespace Projeto_Finch
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F);
-            this.txtSenha.Location = new System.Drawing.Point(29, 174);
+            this.txtSenha.Location = new System.Drawing.Point(8, 198);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(262, 25);
+            this.txtSenha.Size = new System.Drawing.Size(235, 25);
             this.txtSenha.TabIndex = 3;
             // 
             // btnLogar
@@ -143,56 +128,105 @@ namespace Projeto_Finch
             this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogar.ForeColor = System.Drawing.Color.White;
-            this.btnLogar.Location = new System.Drawing.Point(29, 235);
+            this.btnLogar.Location = new System.Drawing.Point(8, 277);
             this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(262, 40);
+            this.btnLogar.Size = new System.Drawing.Size(235, 40);
             this.btnLogar.TabIndex = 2;
             this.btnLogar.Text = "_logar";
             this.btnLogar.UseVisualStyleBackColor = false;
-            this.btnLogar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 155);
+            this.label2.Location = new System.Drawing.Point(5, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Senha";
             // 
+            // panLogo
+            // 
+            this.panLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.panLogo.Controls.Add(this.lbSubtitulo);
+            this.panLogo.Controls.Add(this.pbLogo);
+            this.panLogo.Controls.Add(this.pictureBox1);
+            this.panLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panLogo.Location = new System.Drawing.Point(0, 0);
+            this.panLogo.Name = "panLogo";
+            this.panLogo.Size = new System.Drawing.Size(314, 353);
+            this.panLogo.TabIndex = 2;
+            // 
+            // lbSubtitulo
+            // 
+            this.lbSubtitulo.AutoSize = true;
+            this.lbSubtitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbSubtitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSubtitulo.ForeColor = System.Drawing.Color.White;
+            this.lbSubtitulo.Location = new System.Drawing.Point(8, 207);
+            this.lbSubtitulo.Name = "lbSubtitulo";
+            this.lbSubtitulo.Size = new System.Drawing.Size(297, 22);
+            this.lbSubtitulo.TabIndex = 1;
+            this.lbSubtitulo.Text = "_simplificando o mundo jurídico";
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbLogo.Location = new System.Drawing.Point(78, 119);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(166, 82);
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImage = global::Projeto_Finch.Properties.Resources.Pngtreeblack_wave_6974114;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 207);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(311, 143);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 312);
-            this.Controls.Add(this.panLogin);
-            this.Controls.Add(this.panLogo);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(570, 359);
+            this.Controls.Add(this.panPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.panPrincipal.ResumeLayout(false);
+            this.panLogin.ResumeLayout(false);
+            this.panLogin.PerformLayout();
             this.panLogo.ResumeLayout(false);
             this.panLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.panLogin.ResumeLayout(false);
-            this.panLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panLogo;
-        private System.Windows.Forms.Label lbSubtitulo;
-        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Panel panPrincipal;
         private System.Windows.Forms.Panel panLogin;
+        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txtUsu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.Panel panLogo;
+        private System.Windows.Forms.Label lbSubtitulo;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

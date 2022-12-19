@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Projeto_Finch.Controller;
 
 namespace Projeto_Finch.View
 {
@@ -26,9 +27,12 @@ namespace Projeto_Finch.View
             InitializeComponent();
         }
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
+        private async void frmPrincipal_Load(object sender, EventArgs e)
         {
-            
+            APIController controller = new APIController();
+
+            //Inicial o form buscando os dados da bored API 
+            await controller.BuscaDadosApi();
         }
 
         private void panCabecalho_MouseMove(object sender, MouseEventArgs e)

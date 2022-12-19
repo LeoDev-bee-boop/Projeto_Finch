@@ -124,6 +124,7 @@ namespace Projeto_Finch
             // btnLogar
             // 
             this.btnLogar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.btnLogar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogar.FlatAppearance.BorderSize = 0;
             this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,7 +189,7 @@ namespace Projeto_Finch
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 207);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(303, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(306, 143);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

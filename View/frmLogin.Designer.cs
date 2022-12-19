@@ -97,16 +97,16 @@ namespace Projeto_Finch
             // txtUsu
             // 
             this.txtUsu.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F);
-            this.txtUsu.Location = new System.Drawing.Point(8, 130);
+            this.txtUsu.Location = new System.Drawing.Point(8, 139);
             this.txtUsu.Name = "txtUsu";
-            this.txtUsu.Size = new System.Drawing.Size(235, 25);
+            this.txtUsu.Size = new System.Drawing.Size(241, 25);
             this.txtUsu.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 110);
+            this.label3.Location = new System.Drawing.Point(5, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 4;
@@ -118,7 +118,7 @@ namespace Projeto_Finch
             this.txtSenha.Location = new System.Drawing.Point(8, 198);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(235, 25);
+            this.txtSenha.Size = new System.Drawing.Size(241, 25);
             this.txtSenha.TabIndex = 3;
             // 
             // btnLogar
@@ -130,7 +130,7 @@ namespace Projeto_Finch
             this.btnLogar.ForeColor = System.Drawing.Color.White;
             this.btnLogar.Location = new System.Drawing.Point(8, 277);
             this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(235, 40);
+            this.btnLogar.Size = new System.Drawing.Size(241, 40);
             this.btnLogar.TabIndex = 2;
             this.btnLogar.Text = "_logar";
             this.btnLogar.UseVisualStyleBackColor = false;

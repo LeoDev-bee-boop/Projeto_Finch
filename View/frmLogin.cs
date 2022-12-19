@@ -21,5 +21,10 @@ namespace Projeto_Finch
         {
             this.Close();
         }
+
+        private void lbSubtitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -73,9 +73,9 @@ namespace Projeto_Finch
             this.panLogin.Controls.Add(this.txtSenha);
             this.panLogin.Controls.Add(this.btnLogar);
             this.panLogin.Controls.Add(this.label2);
-            this.panLogin.Location = new System.Drawing.Point(312, 0);
+            this.panLogin.Location = new System.Drawing.Point(306, 0);
             this.panLogin.Name = "panLogin";
-            this.panLogin.Size = new System.Drawing.Size(252, 353);
+            this.panLogin.Size = new System.Drawing.Size(258, 353);
             this.panLogin.TabIndex = 3;
             // 
             // btnFechar
@@ -85,7 +85,7 @@ namespace Projeto_Finch
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
-            this.btnFechar.Location = new System.Drawing.Point(217, 9);
+            this.btnFechar.Location = new System.Drawing.Point(223, 9);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(26, 26);
             this.btnFechar.TabIndex = 6;
@@ -154,7 +154,7 @@ namespace Projeto_Finch
             this.panLogo.Dock = System.Windows.Forms.DockStyle.Left;
             this.panLogo.Location = new System.Drawing.Point(0, 0);
             this.panLogo.Name = "panLogo";
-            this.panLogo.Size = new System.Drawing.Size(314, 353);
+            this.panLogo.Size = new System.Drawing.Size(306, 353);
             this.panLogo.TabIndex = 2;
             // 
             // lbSubtitulo
@@ -163,17 +163,18 @@ namespace Projeto_Finch
             this.lbSubtitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbSubtitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSubtitulo.ForeColor = System.Drawing.Color.White;
-            this.lbSubtitulo.Location = new System.Drawing.Point(8, 207);
+            this.lbSubtitulo.Location = new System.Drawing.Point(3, 207);
             this.lbSubtitulo.Name = "lbSubtitulo";
             this.lbSubtitulo.Size = new System.Drawing.Size(297, 22);
             this.lbSubtitulo.TabIndex = 1;
             this.lbSubtitulo.Text = "_simplificando o mundo jurídico";
+            this.lbSubtitulo.Click += new System.EventHandler(this.lbSubtitulo_Click);
             // 
             // pbLogo
             // 
             this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbLogo.Location = new System.Drawing.Point(78, 119);
+            this.pbLogo.Location = new System.Drawing.Point(74, 119);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(166, 82);
             this.pbLogo.TabIndex = 0;
@@ -187,7 +188,7 @@ namespace Projeto_Finch
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 207);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(311, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(303, 143);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

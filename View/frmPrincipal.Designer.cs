@@ -91,7 +91,7 @@ namespace Projeto_Finch.View
             this.btnFechar.Location = new System.Drawing.Point(451, 8);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(26, 26);
-            this.btnFechar.TabIndex = 7;
+            this.btnFechar.TabIndex = 0;
             this.btnFechar.Text = "X";
             this.btnFechar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFechar.UseVisualStyleBackColor = false;
@@ -173,7 +173,7 @@ namespace Projeto_Finch.View
             this.txtRespostaAcessibilidade.Location = new System.Drawing.Point(131, 267);
             this.txtRespostaAcessibilidade.Name = "txtRespostaAcessibilidade";
             this.txtRespostaAcessibilidade.Size = new System.Drawing.Size(331, 25);
-            this.txtRespostaAcessibilidade.TabIndex = 33;
+            this.txtRespostaAcessibilidade.TabIndex = 19;
             // 
             // txtRespostaChave
             // 
@@ -182,7 +182,7 @@ namespace Projeto_Finch.View
             this.txtRespostaChave.Location = new System.Drawing.Point(131, 229);
             this.txtRespostaChave.Name = "txtRespostaChave";
             this.txtRespostaChave.Size = new System.Drawing.Size(331, 25);
-            this.txtRespostaChave.TabIndex = 32;
+            this.txtRespostaChave.TabIndex = 16;
             // 
             // txtRespostaLinks
             // 
@@ -191,7 +191,7 @@ namespace Projeto_Finch.View
             this.txtRespostaLinks.Location = new System.Drawing.Point(131, 191);
             this.txtRespostaLinks.Name = "txtRespostaLinks";
             this.txtRespostaLinks.Size = new System.Drawing.Size(331, 25);
-            this.txtRespostaLinks.TabIndex = 31;
+            this.txtRespostaLinks.TabIndex = 13;
             // 
             // txtRespostasPrecos
             // 
@@ -200,7 +200,7 @@ namespace Projeto_Finch.View
             this.txtRespostasPrecos.Location = new System.Drawing.Point(131, 153);
             this.txtRespostasPrecos.Name = "txtRespostasPrecos";
             this.txtRespostasPrecos.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostasPrecos.TabIndex = 30;
+            this.txtRespostasPrecos.TabIndex = 10;
             // 
             // txtRespostaParticipantes
             // 
@@ -209,7 +209,7 @@ namespace Projeto_Finch.View
             this.txtRespostaParticipantes.Location = new System.Drawing.Point(131, 115);
             this.txtRespostaParticipantes.Name = "txtRespostaParticipantes";
             this.txtRespostaParticipantes.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostaParticipantes.TabIndex = 29;
+            this.txtRespostaParticipantes.TabIndex = 7;
             // 
             // txtRespostaTipo
             // 
@@ -218,7 +218,7 @@ namespace Projeto_Finch.View
             this.txtRespostaTipo.Location = new System.Drawing.Point(131, 77);
             this.txtRespostaTipo.Name = "txtRespostaTipo";
             this.txtRespostaTipo.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostaTipo.TabIndex = 28;
+            this.txtRespostaTipo.TabIndex = 4;
             // 
             // txtRespostaAtividade
             // 
@@ -227,7 +227,7 @@ namespace Projeto_Finch.View
             this.txtRespostaAtividade.Location = new System.Drawing.Point(131, 39);
             this.txtRespostaAtividade.Name = "txtRespostaAtividade";
             this.txtRespostaAtividade.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostaAtividade.TabIndex = 6;
+            this.txtRespostaAtividade.TabIndex = 1;
             // 
             // panLinha7
             // 
@@ -238,7 +238,7 @@ namespace Projeto_Finch.View
             this.panLinha7.Location = new System.Drawing.Point(6, 222);
             this.panLinha7.Name = "panLinha7";
             this.panLinha7.Size = new System.Drawing.Size(456, 1);
-            this.panLinha7.TabIndex = 27;
+            this.panLinha7.TabIndex = 14;
             // 
             // lbLink
             // 
@@ -247,7 +247,7 @@ namespace Projeto_Finch.View
             this.lbLink.Location = new System.Drawing.Point(6, 194);
             this.lbLink.Name = "lbLink";
             this.lbLink.Size = new System.Drawing.Size(44, 17);
-            this.lbLink.TabIndex = 25;
+            this.lbLink.TabIndex = 12;
             this.lbLink.Text = "Link:";
             // 
             // btnCarregarProxima
@@ -261,7 +261,7 @@ namespace Projeto_Finch.View
             this.btnCarregarProxima.Location = new System.Drawing.Point(140, 305);
             this.btnCarregarProxima.Name = "btnCarregarProxima";
             this.btnCarregarProxima.Size = new System.Drawing.Size(189, 40);
-            this.btnCarregarProxima.TabIndex = 24;
+            this.btnCarregarProxima.TabIndex = 21;
             this.btnCarregarProxima.Text = "_carregar próxima";
             this.btnCarregarProxima.UseVisualStyleBackColor = false;
             this.btnCarregarProxima.Click += new System.EventHandler(this.btnCarregarProxima_Click);
@@ -275,7 +275,7 @@ namespace Projeto_Finch.View
             this.panelLinha6.Location = new System.Drawing.Point(6, 298);
             this.panelLinha6.Name = "panelLinha6";
             this.panelLinha6.Size = new System.Drawing.Size(456, 1);
-            this.panelLinha6.TabIndex = 16;
+            this.panelLinha6.TabIndex = 20;
             // 
             // panelLinha5
             // 
@@ -286,7 +286,7 @@ namespace Projeto_Finch.View
             this.panelLinha5.Location = new System.Drawing.Point(6, 260);
             this.panelLinha5.Name = "panelLinha5";
             this.panelLinha5.Size = new System.Drawing.Size(456, 1);
-            this.panelLinha5.TabIndex = 15;
+            this.panelLinha5.TabIndex = 17;
             // 
             // panelLinha4
             // 
@@ -297,7 +297,7 @@ namespace Projeto_Finch.View
             this.panelLinha4.Location = new System.Drawing.Point(6, 184);
             this.panelLinha4.Name = "panelLinha4";
             this.panelLinha4.Size = new System.Drawing.Size(456, 1);
-            this.panelLinha4.TabIndex = 14;
+            this.panelLinha4.TabIndex = 11;
             // 
             // panelLinha3
             // 
@@ -308,7 +308,7 @@ namespace Projeto_Finch.View
             this.panelLinha3.Location = new System.Drawing.Point(6, 146);
             this.panelLinha3.Name = "panelLinha3";
             this.panelLinha3.Size = new System.Drawing.Size(456, 1);
-            this.panelLinha3.TabIndex = 13;
+            this.panelLinha3.TabIndex = 8;
             // 
             // panelLinha2
             // 
@@ -319,7 +319,7 @@ namespace Projeto_Finch.View
             this.panelLinha2.Location = new System.Drawing.Point(6, 108);
             this.panelLinha2.Name = "panelLinha2";
             this.panelLinha2.Size = new System.Drawing.Size(456, 1);
-            this.panelLinha2.TabIndex = 12;
+            this.panelLinha2.TabIndex = 5;
             // 
             // panelLinha1
             // 
@@ -330,7 +330,7 @@ namespace Projeto_Finch.View
             this.panelLinha1.Location = new System.Drawing.Point(4, 70);
             this.panelLinha1.Name = "panelLinha1";
             this.panelLinha1.Size = new System.Drawing.Size(456, 1);
-            this.panelLinha1.TabIndex = 11;
+            this.panelLinha1.TabIndex = 2;
             // 
             // lbAccessibility
             // 
@@ -339,7 +339,7 @@ namespace Projeto_Finch.View
             this.lbAccessibility.Location = new System.Drawing.Point(6, 270);
             this.lbAccessibility.Name = "lbAccessibility";
             this.lbAccessibility.Size = new System.Drawing.Size(119, 17);
-            this.lbAccessibility.TabIndex = 10;
+            this.lbAccessibility.TabIndex = 18;
             this.lbAccessibility.Text = "Acessibilidade:";
             // 
             // lbChave
@@ -349,7 +349,7 @@ namespace Projeto_Finch.View
             this.lbChave.Location = new System.Drawing.Point(6, 232);
             this.lbChave.Name = "lbChave";
             this.lbChave.Size = new System.Drawing.Size(59, 17);
-            this.lbChave.TabIndex = 9;
+            this.lbChave.TabIndex = 15;
             this.lbChave.Text = "Chave:";
             // 
             // lbPrice
@@ -359,7 +359,7 @@ namespace Projeto_Finch.View
             this.lbPrice.Location = new System.Drawing.Point(6, 156);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(65, 17);
-            this.lbPrice.TabIndex = 8;
+            this.lbPrice.TabIndex = 9;
             this.lbPrice.Text = "Preços:";
             // 
             // lbParticipants
@@ -369,7 +369,7 @@ namespace Projeto_Finch.View
             this.lbParticipants.Location = new System.Drawing.Point(6, 118);
             this.lbParticipants.Name = "lbParticipants";
             this.lbParticipants.Size = new System.Drawing.Size(110, 17);
-            this.lbParticipants.TabIndex = 7;
+            this.lbParticipants.TabIndex = 6;
             this.lbParticipants.Text = "Participantes:";
             // 
             // lbType
@@ -379,7 +379,7 @@ namespace Projeto_Finch.View
             this.lbType.Location = new System.Drawing.Point(6, 80);
             this.lbType.Name = "lbType";
             this.lbType.Size = new System.Drawing.Size(44, 17);
-            this.lbType.TabIndex = 6;
+            this.lbType.TabIndex = 3;
             this.lbType.Text = "Tipo:";
             // 
             // lbActivity
@@ -389,7 +389,7 @@ namespace Projeto_Finch.View
             this.lbActivity.Location = new System.Drawing.Point(6, 42);
             this.lbActivity.Name = "lbActivity";
             this.lbActivity.Size = new System.Drawing.Size(81, 17);
-            this.lbActivity.TabIndex = 5;
+            this.lbActivity.TabIndex = 0;
             this.lbActivity.Text = "Atividade:";
             // 
             // panPrincipal

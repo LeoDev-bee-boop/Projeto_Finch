@@ -76,7 +76,7 @@ namespace Projeto_Finch
             this.panLogin.Location = new System.Drawing.Point(306, 0);
             this.panLogin.Name = "panLogin";
             this.panLogin.Size = new System.Drawing.Size(258, 353);
-            this.panLogin.TabIndex = 3;
+            this.panLogin.TabIndex = 1;
             // 
             // btnFechar
             // 
@@ -88,7 +88,7 @@ namespace Projeto_Finch
             this.btnFechar.Location = new System.Drawing.Point(223, 9);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(26, 26);
-            this.btnFechar.TabIndex = 6;
+            this.btnFechar.TabIndex = 0;
             this.btnFechar.Text = "X";
             this.btnFechar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFechar.UseVisualStyleBackColor = false;
@@ -101,7 +101,7 @@ namespace Projeto_Finch
             this.txtUsu.Location = new System.Drawing.Point(8, 139);
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.Size = new System.Drawing.Size(241, 25);
-            this.txtUsu.TabIndex = 5;
+            this.txtUsu.TabIndex = 2;
             // 
             // label3
             // 
@@ -110,7 +110,7 @@ namespace Projeto_Finch
             this.label3.Location = new System.Drawing.Point(5, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 17);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 1;
             this.label3.Text = "Usuário";
             // 
             // txtSenha
@@ -121,7 +121,7 @@ namespace Projeto_Finch
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(241, 25);
-            this.txtSenha.TabIndex = 3;
+            this.txtSenha.TabIndex = 4;
             // 
             // btnLogar
             // 
@@ -134,7 +134,7 @@ namespace Projeto_Finch
             this.btnLogar.Location = new System.Drawing.Point(8, 280);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(241, 40);
-            this.btnLogar.TabIndex = 2;
+            this.btnLogar.TabIndex = 5;
             this.btnLogar.Text = "_logar";
             this.btnLogar.UseVisualStyleBackColor = false;
             this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
@@ -146,7 +146,7 @@ namespace Projeto_Finch
             this.label2.Location = new System.Drawing.Point(5, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 17);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
             // 
             // panLogo
@@ -159,7 +159,7 @@ namespace Projeto_Finch
             this.panLogo.Location = new System.Drawing.Point(0, 0);
             this.panLogo.Name = "panLogo";
             this.panLogo.Size = new System.Drawing.Size(306, 353);
-            this.panLogo.TabIndex = 2;
+            this.panLogo.TabIndex = 0;
             // 
             // lbSubtitulo
             // 
@@ -170,7 +170,7 @@ namespace Projeto_Finch
             this.lbSubtitulo.Location = new System.Drawing.Point(3, 207);
             this.lbSubtitulo.Name = "lbSubtitulo";
             this.lbSubtitulo.Size = new System.Drawing.Size(297, 22);
-            this.lbSubtitulo.TabIndex = 1;
+            this.lbSubtitulo.TabIndex = 0;
             this.lbSubtitulo.Text = "_simplificando o mundo jurídico";
             // 
             // pbLogo

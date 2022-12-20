@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Bored.cs" />
     <Compile Include="Controller\APIController.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="Model\APIModel.cs" />
     <Compile Include="View\frmLogin.cs">
       <SubType>Form</SubType>
@@ -82,6 +83,7 @@
     <EmbeddedResource Include="View\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Configs\Config.Json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

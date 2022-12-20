@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,10 +25,22 @@ namespace Projeto_Finch.Model
 
         public bool ValidarLogin(string usu, string senha)
         {
-            if(usu   == "user_Finch" &&
-               senha == "finch@2022")
+            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),"Configs", "Config.json");
+            Login login;
+
+            if (File.Exists(path))
             {
-                return true;
+                using (StreamReader r = new StreamReader(path))
+                {
+                    string json = r.ReadToEnd();
+                    login = JsonConvert.DeserializeObject<Login>(json);                    
+                }
+
+                if (usu == login.Usuario &&
+                    senha == login.Senha)
+                {
+                    return true;
+                }
             }
 
             return false;

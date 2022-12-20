@@ -29,10 +29,15 @@ namespace Projeto_Finch.View
 
         private async void frmPrincipal_Load(object sender, EventArgs e)
         {
+            //Instânciando classes
             APIController controller = new APIController();
+            Bored bored = new Bored();
 
-            //Inicial o form buscando os dados da bored API 
-            await controller.BuscaDadosApi();
+            //Inicia o form buscando os dados da bored API 
+            bored = await controller.BuscaDadosApi();
+
+            //Adicionando valores aos labels
+            AdicionaValores(bored);
         }
 
         private void panCabecalho_MouseMove(object sender, MouseEventArgs e)
@@ -42,6 +47,35 @@ namespace Projeto_Finch.View
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void AdicionaValores(Bored bored)
+        {
+            txtRespostaAtividade.Text = bored.activity.ToString();
+            txtRespostaTipo.Text = bored.type.ToString();
+            txtRespostaParticipantes.Text = bored.participants.ToString();
+            txtRespostasPrecos.Text = bored.price.ToString();
+            txtRespostaLinks.Text = bored.link.ToString();
+            txtRespostaChave.Text = bored.key.ToString();
+            txtRespostaAcessibilidade.Text = bored.accessibility.ToString();
+        }
+
+        private async void btnCarregarProxima_Click(object sender, EventArgs e)
+        {
+            //Instânciando classes
+            APIController controller = new APIController();
+            Bored bored = new Bored();
+
+            //Inicia o form buscando os dados da bored API 
+            bored = await controller.BuscaDadosApi();
+
+            //Adicionando valores aos labels
+            AdicionaValores(bored);
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

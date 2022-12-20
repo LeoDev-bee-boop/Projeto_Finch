@@ -81,7 +81,7 @@ namespace Projeto_Finch
             // btnFechar
             // 
             this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
@@ -96,7 +96,8 @@ namespace Projeto_Finch
             // 
             // txtUsu
             // 
-            this.txtUsu.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F);
+            this.txtUsu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtUsu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.txtUsu.Location = new System.Drawing.Point(8, 139);
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.Size = new System.Drawing.Size(241, 25);
@@ -114,8 +115,9 @@ namespace Projeto_Finch
             // 
             // txtSenha
             // 
-            this.txtSenha.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F);
-            this.txtSenha.Location = new System.Drawing.Point(8, 198);
+            this.txtSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtSenha.Location = new System.Drawing.Point(8, 204);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(241, 25);
@@ -129,7 +131,7 @@ namespace Projeto_Finch
             this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogar.ForeColor = System.Drawing.Color.White;
-            this.btnLogar.Location = new System.Drawing.Point(8, 277);
+            this.btnLogar.Location = new System.Drawing.Point(8, 280);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(241, 40);
             this.btnLogar.TabIndex = 2;
@@ -140,7 +142,7 @@ namespace Projeto_Finch
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 178);
+            this.label2.Location = new System.Drawing.Point(5, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 17);
             this.label2.TabIndex = 1;
@@ -189,7 +191,7 @@ namespace Projeto_Finch
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 207);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(306, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(306, 146);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

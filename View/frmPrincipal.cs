@@ -36,6 +36,9 @@ namespace Projeto_Finch.View
             //Inicia o form buscando os dados da bored API 
             bored = await controller.BuscarDadosApi();
 
+            if (bored == null)
+                return;
+
             //Adicionando valores aos labels
             AdicionaValores(bored);
         }
@@ -68,6 +71,9 @@ namespace Projeto_Finch.View
 
             //Inicia o form buscando os dados da bored API 
             bored = await controller.BuscarDadosApi();
+
+            if (bored == null)
+                return;
 
             //Adicionando valores aos labels
             AdicionaValores(bored);

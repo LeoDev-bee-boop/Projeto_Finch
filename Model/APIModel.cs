@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Projeto_Finch.Model
 {
@@ -14,13 +15,21 @@ namespace Projeto_Finch.Model
     {
         public async Task<Bored> BuscaDadosApi()
         {
-            HttpClient httpClient = new HttpClient();
-            var response = await httpClient.GetAsync("http://www.boredapi.com/api/activity/");
-            var jsonString = await response.Content.ReadAsStringAsync();
+            try
+            {
+                HttpClient httpClient = new HttpClient();
+                var response = await httpClient.GetAsync("http://www.boredapi.com/api/activity/");
+                var jsonString = await response.Content.ReadAsStringAsync();
 
-            Bored jsonObject = JsonConvert.DeserializeObject<Bored>(jsonString);
+                Bored jsonObject = JsonConvert.DeserializeObject<Bored>(jsonString);
 
-            return jsonObject;
+                return jsonObject;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
         }
 
         public bool ValidarLogin(string usu, string senha)

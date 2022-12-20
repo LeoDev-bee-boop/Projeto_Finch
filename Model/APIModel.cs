@@ -25,7 +25,7 @@ namespace Projeto_Finch.Model
 
         public bool ValidarLogin(string usu, string senha)
         {
-            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),"Configs", "Config.json");
+            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Config", "DadosLogin.json");
             Login login;
 
             if (File.Exists(path))

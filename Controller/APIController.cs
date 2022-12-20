@@ -9,10 +9,17 @@ namespace Projeto_Finch.Controller
 {
     public class APIController
     {
-        public async Task<Bored> BuscaDadosApi()
+        //Instânciando classe
+        APIModel _model = new APIModel();
+
+        public async Task<Bored> BuscarDadosApi()
         {
-            APIModel model = new APIModel();
-            return await model.BuscaDadosApi();
+            return await _model.BuscaDadosApi();
+        }
+
+        public bool ValidarLogin(string usu, string senha)
+        {
+            return _model.ValidarLogin(usu, senha);
         }
     }
 }

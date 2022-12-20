@@ -20,5 +20,16 @@ namespace Projeto_Finch.Model
 
             return jsonObject;
         }
+
+        public bool ValidarLogin(string usu, string senha)
+        {
+            if(usu   == "user_Finch" &&
+               senha == "finch@2022")
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

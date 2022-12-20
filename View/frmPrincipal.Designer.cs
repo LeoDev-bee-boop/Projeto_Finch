@@ -36,6 +36,13 @@ namespace Projeto_Finch.View
             this.panCorpo = new System.Windows.Forms.Panel();
             this.panEventos = new System.Windows.Forms.Panel();
             this.gbEventos = new System.Windows.Forms.GroupBox();
+            this.txtRespostaAcessibilidade = new System.Windows.Forms.TextBox();
+            this.txtRespostaChave = new System.Windows.Forms.TextBox();
+            this.txtRespostaLinks = new System.Windows.Forms.TextBox();
+            this.txtRespostasPrecos = new System.Windows.Forms.TextBox();
+            this.txtRespostaParticipantes = new System.Windows.Forms.TextBox();
+            this.txtRespostaTipo = new System.Windows.Forms.TextBox();
+            this.txtRespostaAtividade = new System.Windows.Forms.TextBox();
             this.panLinha7 = new System.Windows.Forms.Panel();
             this.lbLink = new System.Windows.Forms.Label();
             this.btnCarregarProxima = new System.Windows.Forms.Button();
@@ -52,13 +59,6 @@ namespace Projeto_Finch.View
             this.lbType = new System.Windows.Forms.Label();
             this.lbActivity = new System.Windows.Forms.Label();
             this.panPrincipal = new System.Windows.Forms.Panel();
-            this.txtRespostaAtividade = new System.Windows.Forms.TextBox();
-            this.txtRespostaTipo = new System.Windows.Forms.TextBox();
-            this.txtRespostaParticipantes = new System.Windows.Forms.TextBox();
-            this.txtRespostasPrecos = new System.Windows.Forms.TextBox();
-            this.txtRespostaLinks = new System.Windows.Forms.TextBox();
-            this.txtRespostaChave = new System.Windows.Forms.TextBox();
-            this.txtRespostaAcessibilidade = new System.Windows.Forms.TextBox();
             this.panCabecalho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panCorpo.SuspendLayout();
@@ -69,10 +69,11 @@ namespace Projeto_Finch.View
             // 
             // panCabecalho
             // 
+            this.panCabecalho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panCabecalho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.panCabecalho.Controls.Add(this.btnFechar);
             this.panCabecalho.Controls.Add(this.pbLogo);
-            this.panCabecalho.Dock = System.Windows.Forms.DockStyle.Top;
             this.panCabecalho.Location = new System.Drawing.Point(0, 0);
             this.panCabecalho.Name = "panCabecalho";
             this.panCabecalho.Size = new System.Drawing.Size(486, 37);
@@ -165,13 +166,76 @@ namespace Projeto_Finch.View
             this.gbEventos.TabStop = false;
             this.gbEventos.Text = "_eventos";
             // 
+            // txtRespostaAcessibilidade
+            // 
+            this.txtRespostaAcessibilidade.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostaAcessibilidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostaAcessibilidade.Location = new System.Drawing.Point(131, 267);
+            this.txtRespostaAcessibilidade.Name = "txtRespostaAcessibilidade";
+            this.txtRespostaAcessibilidade.Size = new System.Drawing.Size(331, 25);
+            this.txtRespostaAcessibilidade.TabIndex = 33;
+            // 
+            // txtRespostaChave
+            // 
+            this.txtRespostaChave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostaChave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostaChave.Location = new System.Drawing.Point(131, 229);
+            this.txtRespostaChave.Name = "txtRespostaChave";
+            this.txtRespostaChave.Size = new System.Drawing.Size(331, 25);
+            this.txtRespostaChave.TabIndex = 32;
+            // 
+            // txtRespostaLinks
+            // 
+            this.txtRespostaLinks.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostaLinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostaLinks.Location = new System.Drawing.Point(131, 191);
+            this.txtRespostaLinks.Name = "txtRespostaLinks";
+            this.txtRespostaLinks.Size = new System.Drawing.Size(331, 25);
+            this.txtRespostaLinks.TabIndex = 31;
+            // 
+            // txtRespostasPrecos
+            // 
+            this.txtRespostasPrecos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostasPrecos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostasPrecos.Location = new System.Drawing.Point(131, 153);
+            this.txtRespostasPrecos.Name = "txtRespostasPrecos";
+            this.txtRespostasPrecos.Size = new System.Drawing.Size(329, 25);
+            this.txtRespostasPrecos.TabIndex = 30;
+            // 
+            // txtRespostaParticipantes
+            // 
+            this.txtRespostaParticipantes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostaParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostaParticipantes.Location = new System.Drawing.Point(131, 115);
+            this.txtRespostaParticipantes.Name = "txtRespostaParticipantes";
+            this.txtRespostaParticipantes.Size = new System.Drawing.Size(329, 25);
+            this.txtRespostaParticipantes.TabIndex = 29;
+            // 
+            // txtRespostaTipo
+            // 
+            this.txtRespostaTipo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostaTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostaTipo.Location = new System.Drawing.Point(131, 77);
+            this.txtRespostaTipo.Name = "txtRespostaTipo";
+            this.txtRespostaTipo.Size = new System.Drawing.Size(329, 25);
+            this.txtRespostaTipo.TabIndex = 28;
+            // 
+            // txtRespostaAtividade
+            // 
+            this.txtRespostaAtividade.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.txtRespostaAtividade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
+            this.txtRespostaAtividade.Location = new System.Drawing.Point(131, 39);
+            this.txtRespostaAtividade.Name = "txtRespostaAtividade";
+            this.txtRespostaAtividade.Size = new System.Drawing.Size(329, 25);
+            this.txtRespostaAtividade.TabIndex = 6;
+            // 
             // panLinha7
             // 
             this.panLinha7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panLinha7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.panLinha7.Enabled = false;
-            this.panLinha7.Location = new System.Drawing.Point(6, 219);
+            this.panLinha7.Location = new System.Drawing.Point(6, 222);
             this.panLinha7.Name = "panLinha7";
             this.panLinha7.Size = new System.Drawing.Size(456, 1);
             this.panLinha7.TabIndex = 27;
@@ -180,7 +244,7 @@ namespace Projeto_Finch.View
             // 
             this.lbLink.AutoSize = true;
             this.lbLink.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLink.Location = new System.Drawing.Point(6, 191);
+            this.lbLink.Location = new System.Drawing.Point(6, 194);
             this.lbLink.Name = "lbLink";
             this.lbLink.Size = new System.Drawing.Size(44, 17);
             this.lbLink.TabIndex = 25;
@@ -208,7 +272,7 @@ namespace Projeto_Finch.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelLinha6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.panelLinha6.Enabled = false;
-            this.panelLinha6.Location = new System.Drawing.Point(4, 295);
+            this.panelLinha6.Location = new System.Drawing.Point(6, 298);
             this.panelLinha6.Name = "panelLinha6";
             this.panelLinha6.Size = new System.Drawing.Size(456, 1);
             this.panelLinha6.TabIndex = 16;
@@ -219,7 +283,7 @@ namespace Projeto_Finch.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelLinha5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.panelLinha5.Enabled = false;
-            this.panelLinha5.Location = new System.Drawing.Point(4, 257);
+            this.panelLinha5.Location = new System.Drawing.Point(6, 260);
             this.panelLinha5.Name = "panelLinha5";
             this.panelLinha5.Size = new System.Drawing.Size(456, 1);
             this.panelLinha5.TabIndex = 15;
@@ -230,7 +294,7 @@ namespace Projeto_Finch.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelLinha4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.panelLinha4.Enabled = false;
-            this.panelLinha4.Location = new System.Drawing.Point(6, 181);
+            this.panelLinha4.Location = new System.Drawing.Point(6, 184);
             this.panelLinha4.Name = "panelLinha4";
             this.panelLinha4.Size = new System.Drawing.Size(456, 1);
             this.panelLinha4.TabIndex = 14;
@@ -241,7 +305,7 @@ namespace Projeto_Finch.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelLinha3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
             this.panelLinha3.Enabled = false;
-            this.panelLinha3.Location = new System.Drawing.Point(6, 143);
+            this.panelLinha3.Location = new System.Drawing.Point(6, 146);
             this.panelLinha3.Name = "panelLinha3";
             this.panelLinha3.Size = new System.Drawing.Size(456, 1);
             this.panelLinha3.TabIndex = 13;
@@ -272,7 +336,7 @@ namespace Projeto_Finch.View
             // 
             this.lbAccessibility.AutoSize = true;
             this.lbAccessibility.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccessibility.Location = new System.Drawing.Point(6, 267);
+            this.lbAccessibility.Location = new System.Drawing.Point(6, 270);
             this.lbAccessibility.Name = "lbAccessibility";
             this.lbAccessibility.Size = new System.Drawing.Size(119, 17);
             this.lbAccessibility.TabIndex = 10;
@@ -282,7 +346,7 @@ namespace Projeto_Finch.View
             // 
             this.lbChave.AutoSize = true;
             this.lbChave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChave.Location = new System.Drawing.Point(6, 229);
+            this.lbChave.Location = new System.Drawing.Point(6, 232);
             this.lbChave.Name = "lbChave";
             this.lbChave.Size = new System.Drawing.Size(59, 17);
             this.lbChave.TabIndex = 9;
@@ -292,7 +356,7 @@ namespace Projeto_Finch.View
             // 
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.Location = new System.Drawing.Point(6, 153);
+            this.lbPrice.Location = new System.Drawing.Point(6, 156);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(65, 17);
             this.lbPrice.TabIndex = 8;
@@ -302,7 +366,7 @@ namespace Projeto_Finch.View
             // 
             this.lbParticipants.AutoSize = true;
             this.lbParticipants.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbParticipants.Location = new System.Drawing.Point(6, 115);
+            this.lbParticipants.Location = new System.Drawing.Point(6, 118);
             this.lbParticipants.Name = "lbParticipants";
             this.lbParticipants.Size = new System.Drawing.Size(110, 17);
             this.lbParticipants.TabIndex = 7;
@@ -340,69 +404,6 @@ namespace Projeto_Finch.View
             this.panPrincipal.Size = new System.Drawing.Size(486, 406);
             this.panPrincipal.TabIndex = 2;
             // 
-            // txtRespostaAtividade
-            // 
-            this.txtRespostaAtividade.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostaAtividade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostaAtividade.Location = new System.Drawing.Point(131, 39);
-            this.txtRespostaAtividade.Name = "txtRespostaAtividade";
-            this.txtRespostaAtividade.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostaAtividade.TabIndex = 6;
-            // 
-            // txtRespostaTipo
-            // 
-            this.txtRespostaTipo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostaTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostaTipo.Location = new System.Drawing.Point(131, 77);
-            this.txtRespostaTipo.Name = "txtRespostaTipo";
-            this.txtRespostaTipo.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostaTipo.TabIndex = 28;
-            // 
-            // txtRespostaParticipantes
-            // 
-            this.txtRespostaParticipantes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostaParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostaParticipantes.Location = new System.Drawing.Point(131, 112);
-            this.txtRespostaParticipantes.Name = "txtRespostaParticipantes";
-            this.txtRespostaParticipantes.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostaParticipantes.TabIndex = 29;
-            // 
-            // txtRespostasPrecos
-            // 
-            this.txtRespostasPrecos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostasPrecos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostasPrecos.Location = new System.Drawing.Point(131, 150);
-            this.txtRespostasPrecos.Name = "txtRespostasPrecos";
-            this.txtRespostasPrecos.Size = new System.Drawing.Size(329, 25);
-            this.txtRespostasPrecos.TabIndex = 30;
-            // 
-            // txtRespostaLinks
-            // 
-            this.txtRespostaLinks.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostaLinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostaLinks.Location = new System.Drawing.Point(131, 188);
-            this.txtRespostaLinks.Name = "txtRespostaLinks";
-            this.txtRespostaLinks.Size = new System.Drawing.Size(331, 25);
-            this.txtRespostaLinks.TabIndex = 31;
-            // 
-            // txtRespostaChave
-            // 
-            this.txtRespostaChave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostaChave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostaChave.Location = new System.Drawing.Point(131, 226);
-            this.txtRespostaChave.Name = "txtRespostaChave";
-            this.txtRespostaChave.Size = new System.Drawing.Size(331, 25);
-            this.txtRespostaChave.TabIndex = 32;
-            // 
-            // txtRespostaAcessibilidade
-            // 
-            this.txtRespostaAcessibilidade.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.txtRespostaAcessibilidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(0)))));
-            this.txtRespostaAcessibilidade.Location = new System.Drawing.Point(131, 264);
-            this.txtRespostaAcessibilidade.Name = "txtRespostaAcessibilidade";
-            this.txtRespostaAcessibilidade.Size = new System.Drawing.Size(331, 25);
-            this.txtRespostaAcessibilidade.TabIndex = 33;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,6 +412,7 @@ namespace Projeto_Finch.View
             this.ClientSize = new System.Drawing.Size(492, 413);
             this.Controls.Add(this.panPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";

@@ -137,6 +137,7 @@ namespace Projeto_Finch
             this.btnLogar.TabIndex = 2;
             this.btnLogar.Text = "_logar";
             this.btnLogar.UseVisualStyleBackColor = false;
+            this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 
             // label2
             // 
@@ -171,7 +172,6 @@ namespace Projeto_Finch
             this.lbSubtitulo.Size = new System.Drawing.Size(297, 22);
             this.lbSubtitulo.TabIndex = 1;
             this.lbSubtitulo.Text = "_simplificando o mundo jurídico";
-            this.lbSubtitulo.Click += new System.EventHandler(this.lbSubtitulo_Click);
             // 
             // pbLogo
             // 
@@ -203,6 +203,7 @@ namespace Projeto_Finch
             this.ClientSize = new System.Drawing.Size(570, 359);
             this.Controls.Add(this.panPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

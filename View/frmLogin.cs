@@ -14,19 +14,17 @@ namespace Projeto_Finch
 {
     public partial class frmLogin : Form
     {
+        #region ..:: Construtor::..
         public frmLogin()
         {
             InitializeComponent();
         }
+        #endregion ..:: Construtor::..
 
+        #region ..:: Eventos ::..
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void lbSubtitulo_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -35,7 +33,7 @@ namespace Projeto_Finch
             APIController controller = new APIController();
 
             //Validação de Login
-            if(controller.ValidarLogin(txtUsu.Text, txtSenha.Text) == true)
+            if (controller.ValidarLogin(txtUsu.Text, txtSenha.Text) == true)
             {
                 frmPrincipal frmPrincipal = new frmPrincipal();
                 frmPrincipal.Show();
@@ -44,10 +42,11 @@ namespace Projeto_Finch
             else
             {
                 MessageBox.Show("Senha ou usuário incorretos, favor tentar novamente!",
-                                "Atenção", 
-                                MessageBoxButtons.YesNo, 
+                                "Atenção",
+                                MessageBoxButtons.YesNo,
                                 MessageBoxIcon.Question);
             }
         }
+        #endregion ..:: Eventos ::..
     }
 }

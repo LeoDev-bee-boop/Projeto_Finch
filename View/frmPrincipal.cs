@@ -22,11 +22,27 @@ namespace Projeto_Finch.View
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        #region ..:: Construtor::..
         public frmPrincipal()
         {
             InitializeComponent();
         }
+        #endregion ..:: Construtor::..
 
+        #region ..:: Métodos ::..
+        private void AdicionaValores(Bored bored)
+        {
+            txtRespostaAtividade.Text = bored.activity.ToString();
+            txtRespostaTipo.Text = bored.type.ToString();
+            txtRespostaParticipantes.Text = bored.participants.ToString();
+            txtRespostasPrecos.Text = bored.price.ToString();
+            txtRespostaLinks.Text = bored.link.ToString();
+            txtRespostaChave.Text = bored.key.ToString();
+            txtRespostaAcessibilidade.Text = bored.accessibility.ToString();
+        }
+        #endregion ..:: Métodos ::..
+
+        #region ..:: Eventos ::..
         private async void frmPrincipal_Load(object sender, EventArgs e)
         {
             //Instânciando classes
@@ -52,17 +68,6 @@ namespace Projeto_Finch.View
             }
         }
 
-        private void AdicionaValores(Bored bored)
-        {
-            txtRespostaAtividade.Text = bored.activity.ToString();
-            txtRespostaTipo.Text = bored.type.ToString();
-            txtRespostaParticipantes.Text = bored.participants.ToString();
-            txtRespostasPrecos.Text = bored.price.ToString();
-            txtRespostaLinks.Text = bored.link.ToString();
-            txtRespostaChave.Text = bored.key.ToString();
-            txtRespostaAcessibilidade.Text = bored.accessibility.ToString();
-        }
-
         private async void btnCarregarProxima_Click(object sender, EventArgs e)
         {
             //Instânciando classes
@@ -72,6 +77,7 @@ namespace Projeto_Finch.View
             //Inicia o form buscando os dados da bored API 
             bored = await controller.BuscarDadosApi();
 
+            //Validando retorno da API
             if (bored == null)
                 return;
 
@@ -83,5 +89,6 @@ namespace Projeto_Finch.View
         {
             this.Close();
         }
+        #endregion ..:: Eventos ::..
     }
 }
